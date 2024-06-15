@@ -16,9 +16,9 @@ const PORT = process.env.PORT
 dataSource
     .then(() => {
         app.listen(PORT, () => {
-            console.log('Пользовательский сервис успешно запущен!')
+            console.log('User service successfully started!')
         })
     })
     .catch((err) => {
-        console.error('Возникла ошибка при запуске пользовательского сервиса:', err)
+        console.error('Error while starting user service:', err)
     })

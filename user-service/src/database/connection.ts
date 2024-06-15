@@ -2,8 +2,8 @@ import {AppDataSource} from "../ormconfig";
 
 export const dataSource = AppDataSource.initialize()
     .then(() => {
-        console.log('Подключение к бд успешно установлено!');
+        console.log('Succeeded DB connection!');
     })
     .catch((err) => {
-        console.error('Ошибка при подключении к бд:', err);
+        console.error('Failed to connect to DB:', err);
     });
